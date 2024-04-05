@@ -219,6 +219,40 @@ a {
 .main .comentarios .comentario .botones .bloquear:hover {color: #fff; background: #acacac;}
 
 
+.icon-custom {
+    font-size: 2.4em;
+    color: white;
+	transition: all ease .2s;
+}
+
+.icon-custom:hover {
+	color: rgba(255, 255, 255, 0.435);
+}
+
+footer {
+	display: none;
+}
+
+
+/* Scroll to up */
+
+.btn-up-custom {
+    background-color: #262a34;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+	transform: translateY(-25px);
+}
+
+.btn-up-custom:hover {
+    background-color: #1d1f25;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 
 /* --- MEDIAQUERIES ---  */
 /* Dispositivo xs */
@@ -228,14 +262,32 @@ a {
 	.main .nueva_entrada form textarea {
 		border: 1px solid black;
 		box-shadow: 0px 2px 2px 0px rgba(0,0,0,.9);
-}
+	}
 }
 
+
+
 /* Dispositivo sm */
+
+@media screen and (max-width: 575px) {
+
+	footer {
+        display: block;
+		background: #262a34;
+		color: #fff;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
 	.barra-lateral {
 		min-height: auto;
 	}
+
+	.footer-aside {
+		display: none;
+	}
+
 	.main .nueva_entrada form input[type="text"],
 	.main .nueva_entrada form textarea {
 		border: 1px solid black;

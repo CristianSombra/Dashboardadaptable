@@ -1,3 +1,10 @@
-document.getElementById("miBoton").addEventListener("click", function() {
-    document.querySelector(".elementoAAnimar").classList.add("transition-out-left");
+document.getElementById("btn-up").addEventListener("click", function() {
+    scrollToTop();
 });
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
