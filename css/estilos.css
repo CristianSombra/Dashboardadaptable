@@ -221,12 +221,32 @@ background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Fi
 	margin-bottom: 10px;
 }
 
-.main .comentarios .comentario .botones .aprobar {background: #279747;}
-.main .comentarios .comentario .botones .eliminar {background: #b93535;}
+.main .comentarios .comentario .botones .aprobar {
+	background: #69a648;
+	background: -webkit-linear-gradient(to left, #7caa61, #67a346); 
+	background: linear-gradient(to left, #7caa61, #67a346);
+}
+
+.main .comentarios .comentario .botones .eliminar {
+	background: #a82b0f;
+	background: -webkit-linear-gradient(to left, #ab3d33, #b73012);
+	background: linear-gradient(to left, #ab3d33, #b73012);
+}
+
 .main .comentarios .comentario .botones .bloquear {color: #737373;}
 
-.main .comentarios .comentario .botones .aprobar:hover {background: #1d7135;}
-.main .comentarios .comentario .botones .eliminar:hover {background: #991f1f;}
+.main .comentarios .comentario .botones .aprobar:hover {
+	background: #55863a;
+	background: -webkit-linear-gradient(to left, #597a46, #4c7934); 
+	background: linear-gradient(to left, #597a46, #4c7934);
+}
+
+.main .comentarios .comentario .botones .eliminar:hover {
+	background: #94240b;
+	background: -webkit-linear-gradient(to left, #732923, #731f0c);
+	background: linear-gradient(to left, #732923, #731f0c);
+}
+
 .main .comentarios .comentario .botones .bloquear:hover {color: #fff; background: #acacac;}
 
 
