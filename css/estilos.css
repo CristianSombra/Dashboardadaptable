@@ -10,7 +10,10 @@ a {
 
 /* --- --- BARRA LATERAL --- --- */
 .barra-lateral {
-	background: #262a34;
+	background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2c3e50, #7da4be);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	color: #fff;
 	min-width: 300px;
 	min-height: 100vh;
@@ -22,7 +25,9 @@ a {
 
 /* --- LOGO --- */
 .barra-lateral .logo {
-	background: #0275d8;
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2c3e50, #7da4be);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .barra-lateral .logo h2 {
@@ -42,7 +47,7 @@ a {
 }
 
 .barra-lateral .menu a:hover {
-	background: rgba(255, 255, 255, 0.192);
+	background: #2c3e506b
 }
 
 .barra-lateral .menu a svg {
@@ -66,7 +71,7 @@ a {
 }
 
 .main .titulo1 {
-	color: #0275d8;
+	color: #3185bd;
 	font: bold;
 }
 
@@ -103,7 +108,7 @@ a {
 
 
 .main .nueva_entrada button {
-	background: #0275d8;
+	background: #496c8f;
 	cursor: pointer;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -118,7 +123,7 @@ a {
 }
 
 .main .nueva_entrada button:hover {
-	background: #025aa5;
+	background: #304c69;
 }
 
 .main .nueva_entrada button svg {
@@ -169,8 +174,8 @@ a {
 }
 
 .main .comentarios .comentario .foto {
-	width: 64px;
-	height: 64px;
+	width: 74px;
+	height: 74px;
 	overflow: hidden;
 	margin-right: 20px;
 	border-radius: 100px;
@@ -183,11 +188,17 @@ a {
 .main .comentarios .comentario .foto img {
 	width: 100%;
 	vertical-align: top;
+	
 }
 
 .main .comentarios .comentario .texto {
 	flex: 1;
 }
+
+.main .comentarios .comentario .texto a {
+	color: #3596d6;
+}
+
 
 .main .comentarios .comentario .texto .texto-comentario {
 	font-size: 14px;
@@ -210,12 +221,12 @@ a {
 	margin-bottom: 10px;
 }
 
-.main .comentarios .comentario .botones .aprobar {background: #35ae6b;}
-.main .comentarios .comentario .botones .eliminar {background: #b74848;}
-.main .comentarios .comentario .botones .bloquear {color: #acacac;}
+.main .comentarios .comentario .botones .aprobar {background: #279747;}
+.main .comentarios .comentario .botones .eliminar {background: #b93535;}
+.main .comentarios .comentario .botones .bloquear {color: #737373;}
 
-.main .comentarios .comentario .botones .aprobar:hover {background: #327732;}
-.main .comentarios .comentario .botones .eliminar:hover {background: #a32520;}
+.main .comentarios .comentario .botones .aprobar:hover {background: #1d7135;}
+.main .comentarios .comentario .botones .eliminar:hover {background: #991f1f;}
 .main .comentarios .comentario .botones .bloquear:hover {color: #fff; background: #acacac;}
 
 
@@ -226,7 +237,7 @@ a {
 }
 
 .icon-custom:hover {
-	color: rgba(255, 255, 255, 0.435);
+	color: #1f2c39
 }
 
 footer {
@@ -237,7 +248,9 @@ footer {
 /* Scroll to up */
 
 .btn-up-custom {
-    background-color: #262a34;
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2c3e50, #7da4be);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     border: none;
     border-radius: 50%;
@@ -249,7 +262,9 @@ footer {
 }
 
 .btn-up-custom:hover {
-    background-color: #1d1f25;
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2c3e50, #7da4be);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -263,6 +278,7 @@ footer {
 		border: 1px solid black;
 		box-shadow: 0px 2px 2px 0px rgba(0,0,0,.9);
 	}
+
 }
 
 
@@ -273,8 +289,10 @@ footer {
 
 	footer {
         display: block;
-		background: #262a34;
 		color: #fff;
+		background: #bdc3c7;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #2c3e50, #7da4be);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #2c3e50, #7da4be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
 }
@@ -292,7 +310,8 @@ footer {
 	.main .nueva_entrada form textarea {
 		border: 1px solid black;
 		box-shadow: 0px 2px 2px 0px rgba(0,0,0,.9);
-}
+	}
+	
 }
 
 /* Dispositivo md */
